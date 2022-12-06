@@ -1,0 +1,231 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color:rgba(247, 243, 239, 0.938);
+    height: 100vh;
+    padding: 0px;
+}
+
+.container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 250px;
+    padding:  10px 14px;
+    background-color: #e1dbd6;
+}
+
+.container header {
+    position: relative;
+    margin: 30px auto 30px auto;
+    left: 25px;
+}
+
+.container header .logo {
+    min-width: 60px;
+}
+
+.container header img {
+    width: 40px;
+}
+
+.container header .list-item {
+    position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.container header .ikon {
+    position: absolute;
+    top: 2%;
+    right: -5px;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 20%;
+    font-size: 22px;
+}
+
+.container li {
+    height: 50px;
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background-color: #e2e2e2;
+    border: 1px solid #c9c7c7;
+    border-radius: 25px;
+}
+
+.container li:hover {
+    justify-content: space-around;
+    display: flex;
+    background-color: #6e6e6e;
+    transition: all .2s;
+}
+
+.container li .ikon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 20px;    
+}
+
+.container li .ikon,
+.container li .text-nav {
+    color: black;
+}
+
+.container li a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.container li a:hover{
+    justify-content: center;
+    transition: all .2s;
+}
+
+.main-conten {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    margin-left: 280px;    
+}
+
+.main-contenTK {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    margin-left: 280px;
+}
+
+table {
+    background-color: #f9f6f2;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.main-conten tr td img {
+    display: grid;
+    width: 350px;
+    min-width: 60px;
+    padding:  10px 14px;
+    text-shadow: 50%;
+    border-radius: 20px;
+}
+
+footer {
+    padding-bottom: 0px;
+    text-align: right;
+    font-size: small;
+    color: #312929;
+    margin-top: 100px;
+}
+
+h1 {
+    margin: 20px;
+}
+
+hr {
+    background-color: black;
+    color: black;
+}
+
+table img {
+    width: 300px;
+    height: 200px;
+}
+/*320,375,425,768,1024*/
+
+@media screen and (max-width: 641) {
+    .menu-bar {
+        width: 60px;
+    }
+
+    .container li span {
+        display: none;
+    }
+    
+    .container header .list-item {
+        display: none;
+    }
+    
+    .container {
+        width: 60px;
+    }
+    
+    .logo {
+        margin-left: -15px;
+    }
+    
+    .main-conten {
+        margin-left: 100px;
+    }
+    
+    .main-contenTK {
+        margin-left: 100px;
+    }
+    
+    .tab_beasiswa {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+    }
+    
+    table img {
+        height: 200px;
+        width: 50px;
+    }
+}
+
+@media (min-width:641px) and (max-width:1007px) {
+    .menu-bar {
+        width: 60px;
+    }
+    
+    .container li span {
+        display: none;
+    }
+    
+    .container header .list-item {
+        display: none;
+    }
+    
+    .container {
+        width: 60px;
+    }
+    
+    .logo {
+        margin-left: -15px;
+    }
+    
+    .main-conten {
+        margin-left: 100px;        
+    }
+    
+    .main-contenTK {
+        margin-left: 100px;
+    }
+    
+    .tab_beasiswa {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+    table img {
+        height: 200px;
+        width: 200px;
+        
+    }
+    
+}
+
